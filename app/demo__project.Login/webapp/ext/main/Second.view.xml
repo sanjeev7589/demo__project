@@ -1,0 +1,7 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="demoproject.Login.ext.main.Second">
+    <Page id="Second" title="{i18n>SecondTitle}">
+        <content>
+            <Text text="This is the second view." />
+        </content>
+    </Page>
+</mvc:View>

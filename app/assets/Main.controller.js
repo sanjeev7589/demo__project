@@ -1,6 +1,7 @@
 sap.ui.define(
     [
-        'sap/fe/core/PageController'
+        'sap/fe/core/PageController',
+    
     ],
     function(PageController) {
         'use strict';
@@ -14,6 +15,8 @@ sap.ui.define(
             onInit: function () {
                 let oRouter = sap.ui.core.UIComponent.getRouterFor(this);
              },
+         
+        
 
             /**
              * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered

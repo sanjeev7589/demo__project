@@ -34,7 +34,7 @@
                                                     <Label text="Token" required="false" />
                                                     <Input value="" enabled="{= !${loginModel>/enable}}"/>
                                                     <Label /> -->
-                                                    <Button id="loginBtn" text="Login" type="Emphasized" class="sapUiSizeCozy" width="100%" press="onPressLogin"/>
+                                                    <!-- <Button id="loginBtn" text="Login" type="Emphasized" class="sapUiSizeCozy" width="100%" press="onPressLogin"/> -->
                                                 </form:content>
                                             </form:SimpleForm>
                                         </items>

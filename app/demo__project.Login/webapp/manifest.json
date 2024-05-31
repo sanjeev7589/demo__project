@@ -11,7 +11,7 @@
     "description": "{{appDescription}}",
     "resources": "resources.json",
     "sourceTemplate": {
-      "id": "@sap/generator-fiori:fpm",
+      "id": "@sap/generator-fiori:basic",
       "version": "1.13.5",
       "toolsId": "66becbb9-4189-4bba-9862-513380406deb"
     },
@@ -22,19 +22,6 @@
         "settings": {
           "annotations": [],
           "odataVersion": "4.0"
-        }
-      }
-    },
-    "crossNavigation": {
-      "inbounds": {
-        "demoprojectLogin-display": {
-          "semanticObject": "demoprojectLogin",
-          "action": "display",
-          "title": "{{flpTitle}}",
-          "signature": {
-            "parameters": {},
-            "additionalParameters": "allowed"
-          }
         }
       }
     }
@@ -98,28 +85,46 @@
     },
     "routing": {
       "config": {
+        "routerClass": "sap.f.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "demoproject.Login",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
       },
       "routes": [
         {
           "name": "CustomersMain",
           "pattern": ":?query:",
           "target": "CustomersMain"
+        },
+        {
+          "name": "second",
+          "pattern": "second",
+          "target": "Second"
         }
       ],
       "targets": {
         "CustomersMain": {
-          "type": "Component",
-          "id": "CustomersMain",
-          "name": "sap.fe.core.fpm",
-          "options": {
-            "settings": {
-              "navigation": {},
-              "contextPath": "/Customers",
-              "viewName": "demoproject.Login.ext.main.Main"
-            }
-          }
-        }
+          "viewType": "XML",
+          "transition": "slide",
+          "viewId": "CustomersMain",
+          "viewName": "ext.main.Main"
+      },
+      "Second": {
+        "viewType": "XML",
+        "transition": "slide",
+        "viewId": "Second",
+        "viewName": "ext.main.Second"
+    }
       }
+    },
+    "rootView": {
+      "viewName": "demoproject.Login.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
     }
   }
 }
