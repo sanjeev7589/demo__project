@@ -1,0 +1,1 @@
+using demo__projectSrv as service from '../../srv/service';
