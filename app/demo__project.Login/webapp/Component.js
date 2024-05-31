@@ -11,12 +11,19 @@ sap.ui.define(
                 manifest: "json"
             },
             init: function () {
+                var oModel,
+                oRouter;
                 // Call the base component's init function
                 AppComponent.prototype.init.apply(this, arguments);
 
                 // Initialize the router
-                this.getRouter().initialize();
-            }
+                oRouter = this.getRouter();
+                oRouter.attachBeforeRouteMatched(this._onBeforeRouteMatched, this);
+                oRouter.initialize();
+            },
+            _onBeforeRouteMatched: function (oEvent) {
+                this.setModel(new JSONModel([]), "errors"); //it can set new error model every screen navigation before routing
+            },
         });
     }
 );

@@ -1,6 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:macros="sap.fe.macros"  xmlns:f="sap.f"  xmlns:form="sap.ui.layout.form"   xmlns:field="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" 
     xmlns:html="http://www.w3.org/1999/xhtml" controllerName="demoproject.Login.ext.main.Main">
-    <Page id="Main" title="{i18n>MainTitle}">
+    <Page id="Main">
         <content>
         <VBox height="105%" justifyContent="Center" alignItems="Center">
                 <MessageStrip visible="{=!!${errors>/}.length}" text="Logon data is not correct. Please login again." customIcon="sap-icon://sys-cancel-2" showIcon="true" showCloseButton="false" class="sapUiSmallMarginBottom loginError">
@@ -42,7 +42,7 @@
                                 </FlexBox>
                             </f:content>
                         </f:Card>
-                        <Text class="sapUiMediumMarginTop" text="Copyright (c) 2023 &lt;Company Name&gt;. All rights reserved." textAlign="Center" />
+                        <Text class="sapUiMediumMarginTop" text="Copyright (c) 2023 &lt;Inflexion&gt;. All rights reserved." textAlign="Center" />
                     </items>
                 </VBox>
             </VBox>
