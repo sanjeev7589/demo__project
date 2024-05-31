@@ -42,7 +42,7 @@
                                 </FlexBox>
                             </f:content>
                         </f:Card>
-                        <Text class="sapUiMediumMarginTop" text="Copyright (c) 2023 &lt;Inflexion&gt;. All rights reserved." textAlign="Center" />
+                        <Text class="sapUiMediumMarginTop" text="Copyright (c) 2024 &lt;Inflexion&gt;. All rights reserved." textAlign="Center" />
                     </items>
                 </VBox>
             </VBox>
