@@ -14,6 +14,12 @@ sap.ui.define(
         showLoading: function (status) {
           this.getView().setBusy(status);
         },
+        getResourceProperty: function (text) {
+          return this.getOwnerComponent()
+            .getModel("i18n")
+            .getResourceBundle()
+            .getText(text);
+        },
         restMethodGet: function (url) {
           let that = this;
           url = 'http://localhost:8080/Employees/all';

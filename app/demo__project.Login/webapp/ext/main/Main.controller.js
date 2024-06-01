@@ -33,7 +33,7 @@ sap.ui.define(
             },
              onPressLogin: function () {
                // MessageBox.information("Hello");
-               this.oRouter.navTo("second");
+               this.oRouter.navTo("dashboard");
             },
 
            

@@ -100,9 +100,9 @@
           "target": "CustomersMain"
         },
         {
-          "name": "second",
-          "pattern": "second",
-          "target": "Second"
+          "name": "dashboard",
+          "pattern": "Dashboard",
+          "target": "Dashboard"
         }
       ],
       "targets": {
@@ -112,11 +112,11 @@
           "viewId": "CustomersMain",
           "viewName": "ext.main.Main"
       },
-      "Second": {
+      "Dashboard": {
         "viewType": "XML",
         "transition": "slide",
-        "viewId": "Second",
-        "viewName": "ext.main.Second"
+        "viewId": "Dashboard",
+        "viewName": "ext.dashboard.Dashboard"
     }
       }
     },
